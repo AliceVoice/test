@@ -24,9 +24,9 @@ public class UniversityTest {
 
         List<Student> expected = new ArrayList<Student>();
 
-        actual.add(student1);
-        actual.add(student2);
-        actual.add(student3);
+        expected.add(student1);
+        expected.add(student2);
+        expected.add(student3);
 
         assertEquals(actual,expected);
     }
