@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class UniversityTest {
     @Test
     public void getAllStudents() {
-        Student student1 = new Student("Евгений", 34, true);
-        Student student2 = new Student("Мария", 23, false);
-        Student student3= new Student("Оля", 48, false);
+        Student student1 = new Student("Олег", 34, true);
+        Student student2 = new Student("Александра", 23, false);
+        Student student3= new Student("Юля", 48, false);
 
         University university = new University();
 
@@ -24,9 +24,9 @@ public class UniversityTest {
 
         List<Student> expected = new ArrayList<Student>();
 
-        actual.add(student1);
-        actual.add(student2);
-        actual.add(student3);
+        expected.add(student1);
+        expected.add(student2);
+        expected.add(student3);
 
         assertEquals(actual,expected);
     }
